@@ -2,6 +2,7 @@ import streamlit as st
 import re
 import nltk
 import string
+import os
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -12,13 +13,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.tag import pos_tag
 from textstat import flesch_kincaid_grade
 import google.generativeai as genai
+from dotenv import load_dotenv
 import warnings
 
 warnings.filterwarnings("ignore")
 
-# Configure Google API
-GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
-genai.configure(api_key=GOOGLE_API_KEY)
+load_dotenv()
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to preprocess text
 def preprocess_text(text):
