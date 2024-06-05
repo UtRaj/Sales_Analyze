@@ -1,8 +1,7 @@
 import nltk
 import os
-
-
-
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 import streamlit as st
 import re
 import string
