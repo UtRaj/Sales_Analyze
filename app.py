@@ -1,18 +1,25 @@
 import nltk
 import os
+import sys
+
+def redirect_to_file(*args):
+    with open(os.devnull, 'w') as f:
+        sys.stdout = f
+        nltk.download(*args)
+        sys.stdout = sys.__stdout__
 
 nltk_data_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
 if not os.path.exists(nltk_data_dir):
     os.mkdir(nltk_data_dir)
 
-nltk.download('punkt', download_dir=nltk_data_dir)
-nltk.download('averaged_perceptron_tagger', download_dir=nltk_data_dir)
+redirect_to_file('punkt', download_dir=nltk_data_dir)
+redirect_to_file('averaged_perceptron_tagger', download_dir=nltk_data_dir)
+
 
 
 import streamlit as st
 import re
 import string
-import os
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
