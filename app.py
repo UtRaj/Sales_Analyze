@@ -1,7 +1,20 @@
+
 import nltk
 import os
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+
+# Set NLTK data directory
+nltk_data_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
+nltk.data.path.append(nltk_data_dir)
+
+# Check if NLTK data is available, if not, download
+if not os.path.exists(os.path.join(nltk_data_dir, 'tokenizers/punkt')):
+    nltk.download('punkt', download_dir=nltk_data_dir)
+
+if not os.path.exists(os.path.join(nltk_data_dir, 'taggers/averaged_perceptron_tagger')):
+    nltk.download('averaged_perceptron_tagger', download_dir=nltk_data_dir)
+
+
+
 import streamlit as st
 import re
 import string
