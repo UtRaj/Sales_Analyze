@@ -1,0 +1,6 @@
+nltk
+textblob
+scikit-learn
+textstat
+google-generativeai
+streamlit
