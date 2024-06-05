@@ -1,6 +1,9 @@
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
 import streamlit as st
 import re
-import nltk
 import string
 import os
 from nltk.tokenize import word_tokenize, sent_tokenize
