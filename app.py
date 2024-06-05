@@ -22,6 +22,11 @@ load_dotenv()
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+# Read the content of the provided file
+def read_file(uploaded_file):
+    content = uploaded_file.getvalue().decode("utf-8")
+    return content
+
 # Function to preprocess text
 def preprocess_text(text):
     text = re.sub(r'\[.*?\]', '', text)
@@ -63,11 +68,12 @@ def repetition_ratio(text):
     repetition_ratio = (len(words) - len(unique_words)) / len(words)
     return repetition_ratio
 
+
 # Read the content of the provided file
-def read_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
+def read_file(uploaded_file):
+    content = uploaded_file.read().decode("utf-8")
     return content
+
 
 # Function to generate a score and justification
 def generate_score_and_justification(text, avg_word_len, punctuation_dens, pos_dens, sent_comp, rep_ratio, readability_score):
