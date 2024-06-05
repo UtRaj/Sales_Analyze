@@ -148,21 +148,22 @@ def main():
         score_and_justification = generate_score_and_justification(cleaned_text, avg_word_len, punctuation_dens, pos_dens, sent_comp, rep_ratio, readability_score)
 
         # Display results
+   
         st.markdown("**Score and Justification**")
         st.write(score_and_justification)
-
+        
         st.markdown("**Additional Analysis**")
-
+        
         # Reasons Customer Would Buy the Course
         st.markdown("**Reasons Customer Would Buy the Course**")
         st.markdown("- Highlight the benefits and features of the course that align with the customer's needs and goals, emphasizing how it can help advance their career or skills.")
         st.markdown("- Address any concerns or objections raised by the customer, demonstrating how the course addresses those challenges effectively.")
-
+        
         # Reasons Customer Wouldn't Buy the Course
         st.markdown("**Reasons Customer Wouldn't Buy the Course**")
         st.markdown("- Identify any unresolved concerns or objections raised by the customer that may prevent them from making a purchase decision.")
         st.markdown("- Consider any external factors or competing priorities mentioned by the customer that could impact their willingness or ability to enroll in the course.")
-
+        
         # Justification for Likelihood of Conversion
         st.markdown("**Justification for Likelihood of Conversion**")
         st.markdown("- Provide a brief analysis comparing the reasons for buying and not buying the course based on the conversation. Justify which scenario is more likely to happen and why, considering the overall tone, customer engagement, and agent effectiveness during the conversation.")
