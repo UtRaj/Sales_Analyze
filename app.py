@@ -12,7 +12,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.tag import pos_tag
 from textstat import flesch_kincaid_grade
 import google.generativeai as genai
-from google.colab import userdata
 import warnings
 
 warnings.filterwarnings("ignore")
