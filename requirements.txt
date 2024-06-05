@@ -4,3 +4,4 @@ scikit-learn
 textstat
 google-generativeai
 streamlit
+python-dotenv
