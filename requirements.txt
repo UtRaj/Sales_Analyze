@@ -1,4 +1,4 @@
-nltk
+nltk == 3.9.1
 textblob
 scikit-learn
 textstat
