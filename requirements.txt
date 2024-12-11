@@ -1,7 +1,10 @@
-nltk == 3.9.1
+nltk
+streamlit
 textblob
 scikit-learn
 textstat
 google-generativeai
-streamlit
 python-dotenv
+chromadb
+faiss-cpu
+sentence-transformers

@@ -45,7 +45,7 @@ streamlit run app.py
 
 ## **Usage**
 
-1. Upload a sales conversation transcript in TXT format using the provided file uploader.
+1. Upload a sales conversation transcript in TXT format using the provided file uploader, you can use any file from "Testing Files" folder. 
    
 2. Once the transcript is uploaded, the app will dynamically track parameters and generate a score and justification for the likelihood of conversion.
    
@@ -61,7 +61,4 @@ GOOGLE_API_KEY=your-google-api-key
 ```
 
 
-## Link
-
-[Sales_Analyze](https://salesanalyze.streamlit.app/)
 
