@@ -1,4 +1,4 @@
-# Sales Conversation Analysis
+# Sales Analyze ( Sales Conversation Analysis )
 This Streamlit app is designed to analyze sales conversation transcripts to determine the likelihood of a customer purchasing a course. It utilizes natural language processing (NLP) techniques and various parameters to generate a score and justification for the likelihood of conversion.
 
 ## Features
