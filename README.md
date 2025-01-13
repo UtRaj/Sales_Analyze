@@ -1,5 +1,5 @@
 # Sales Analyze ( Sales Conversation Analysis )
-This Streamlit app is designed to analyze sales conversation transcripts to determine the likelihood of a customer purchasing a course. It utilizes natural language processing (NLP) techniques and various parameters to generate a score and justification for the likelihood of conversion.
+This app is designed to analyze sales conversation transcripts to determine the likelihood of a customer purchasing a course. It utilizes natural language processing (NLP) techniques and various parameters to generate a score and justification for the likelihood of conversion.
 
 ## Features
 
@@ -41,6 +41,28 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
+
+
+
+
+## **Screenshots**
+
+Below are screenshots of the application:
+
+### 1. Output Texts
+
+![Opening Page](Screenshots/Output.png)
+
+This is the output displaying predictive Analytics texts.
+
+
+### 2. Output Graph
+
+![Output Graph](Screenshots/Graph.png)
+
+This graph shows the results of the Predictive Analytics Texts depicting Grammatical data.
+
+
 
 
 ## **Usage**
