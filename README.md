@@ -58,7 +58,7 @@ This is the output displaying predictive Analytics texts.
 
 ### 2. Output Graph
 
-![Output Graph](Screenshots/Graph.png)
+![Output Graph](Screenshots/Graphs.png)
 
 This graph shows the results of the Predictive Analytics Texts depicting Grammatical data.
 
