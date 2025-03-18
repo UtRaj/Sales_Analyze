@@ -1,5 +1,5 @@
 # Sales Analyze ( Sales Conversation Analysis )
-This app is designed to analyze sales conversation transcripts to determine the likelihood of a customer purchasing a course. It utilizes natural language processing (NLP) techniques and various parameters to generate a score and justification for the likelihood of conversion.
+This app is designed to analyze sales conversation transcripts to determine the likelihood of a customer purchasing a course. It utilizes natural language processing (NLP) techniques & various parameters and Google Gemini to generate a score and justification for the likelihood of conversion.
 
 ## Features
 
